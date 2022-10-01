@@ -4,8 +4,8 @@ import {useState, useEffect} from "react";
 import logo from '../assets/img/logo.svg';
 
 import nav1 from '../assets/img/nav1.png';
-/* import nav2 from '...assets/img/nav2.png';
-import nav3 from '...assets/img/nav3.png'; */
+import nav2 from '../assets/img/nav2.png';
+import nav3 from '../assets/img/nav3.png';
 
 
 export const NavBar = () => {
@@ -48,8 +48,8 @@ export const NavBar = () => {
             <span className="navbar-text">
               <div className="social-icons">
                   <a href="#"><img src={nav1} alt=""/></a>
-                  <a href="#"><img src={nav1} alt=""/></a>
-                  <a href="#"><img src={nav1} alt=""/></a> 
+                  <a href="#"><img src={nav2} alt=""/></a>
+                  <a href="#"><img src={nav3} alt=""/></a> 
               </div>
               <button className=""onClick={() => console.log('connect')}><span>Let's Connect</span></button>
 
