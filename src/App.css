@@ -357,6 +357,7 @@ button.projects-btn  {
 }
 .minor-project-bx {
   margin-top: 100px;
+  margin-bottom: 100px;
   background: #beb9c947;
   border-radius: 64px;
   text-align: center;
@@ -372,4 +373,39 @@ button.projects-btn  {
 .minor-project-slider .item img {
   width: 50%;
   margin: 0 auto 15px auto;
+}
+
+
+
+
+
+
+
+/************ Footer ************/
+.footer {
+  padding: 0 0 10px 0;
+  background-image: url('./assets/img/footer.bmp');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.footer .social-icon img {
+  width: 30px;
+}
+.footer p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #B8B8B8;
+  letter-spacing: 0.5px;
+  margin-top: 20px;
+}
+
+.social-icon {
+  margin-top:10px;
+}
+p.copyright {
+  margin-top: 10px;
+  margin-bottom: 0px;
+
 }
