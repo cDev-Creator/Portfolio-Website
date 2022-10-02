@@ -5,12 +5,10 @@ import {Container, Col} from 'react-bootstrap';
 
 export const Skills = () =>{
     return(
-       
-        <div className="skill-bx">
-        <h2>Technologies I have worked with</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
         <Container>
-        
+        <div className="skill-bx">
+        <h2>Technologies I work with</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
         <div className="skills">
         <Col>
 
@@ -25,13 +23,10 @@ export const Skills = () =>{
               
             <li>CSS</li>
         </div>
-
         <div className="skill-item">
             <li>React.js</li>
         </div>
-   
         </Col>
-
         <Col>
         <div className="skill-item">
             <li>PHP</li>
@@ -44,13 +39,10 @@ export const Skills = () =>{
               
             <li>C#</li>
         </div>
-
         <div className="skill-item">
             <li>Npm</li>
         </div>
-   
         </Col>
-
         <Col>
         <div className="skill-item">
             <li>Linux</li>
@@ -60,19 +52,17 @@ export const Skills = () =>{
             <li>Git</li>
         </div>
         <div className="skill-item">
-              
+             
             <li>GitHub</li>
         </div>
 
         <div className="skill-item">
             <li>Unity</li>
         </div>
-   
         </Col>
-       
         </div>
-        </Container>
+
     </div>
-   
+    </Container>
     )
 }

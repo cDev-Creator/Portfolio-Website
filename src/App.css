@@ -271,8 +271,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner button:hover svg {
   margin-left: 30px;
 }
+
 .banner img {
   animation: updown 3s linear infinite;
+}
+@media (max-width: 780px) {
+  .banner img {
+    display: none;
+  }
 }
 @keyframes updown {
     0% {
@@ -289,10 +295,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Skills ************/
 .skill-bx {
   background: #151515;
-  border-radius: 70px;
+  border-radius: 20px;
   text-align: center;
-  padding: 60px 50px;
+  padding: 70px 50px;
   margin-top: -60px;
+  margin-bottom: 100px;
 }
 
 .skills {
@@ -301,20 +308,68 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   flex-wrap: wrap;  
   
 }
-li {
+.skill-item li {
   list-style-type: none;
 }
-li::before { 
+.skill-item li::before { 
   content: "⊳";
   
 }
-
-
 .skill-item li {
     color: #B8B8B8;
     font-size: 18px;
     letter-spacing: 0.8px;
     line-height: 1.5em;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
 }
 
+/************ Projects ************/
+.projects {
+  padding-top:100px;
+  text-align: left;
+}
+
+.projects-title {
+  margin-bottom: 70px;
+}
+
+.project-card {
+  margin:100px;
+}
+
+button.projects-btn  {
+  margin-left:0px !important;
+  margin-top:15px;
+  font-weight: 700;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 13px 28px;
+  font-size: 18px;
+  margin-left: 18px;
+	position: relative;
+	background-color: transparent;
+	transition: 0.3s ease-in-out;
+}
+
+.skill {
+  padding: 0 0 50px 0;
+  position: relative;
+}
+.minor-project-bx {
+  margin-top: 100px;
+  background: #beb9c947;
+  border-radius: 64px;
+  text-align: center;
+  padding: 60px 50px;
+
+}
+
+.minor-project-slider {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+.minor-project-slider .item img {
+  width: 50%;
+  margin: 0 auto 15px auto;
+}

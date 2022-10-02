@@ -10,24 +10,27 @@ import nav3 from '../assets/img/nav3.png';
 
 
 export const NavBar = () => {
-    const [activeLink, setActiveLink] = useState('home');
-    const [scrolled, isScrolled] = useState(false);
 
-/*     useEffect(() => {
-        const onScroll = () => {
-            if(window.scrollY > 50) {
-                isScrolled = true;
-            }else {
-                isScrolled = false;
-            }
-        }
-        window.addEventListener('scroll', onScroll);
-        return () =>window.removeEventListener('scroll', onScroll);
-    }, []) */
+  const [activeLink, setActiveLink] = useState('home');
+  const [scrolled, setScrolled] = useState(false);
 
-    const updateActiveLink = (value) => {
-        setActiveLink(value);
+  useEffect(() => {
+    const onScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
     }
+
+    window.addEventListener("scroll", onScroll);
+
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [])
+
+  const updateActiveLink = (value) => {
+    setActiveLink(value);
+  }
     return (
         <Navbar expand="lg" className={scrolled ? "scrolled": ""}>
         <Container>
