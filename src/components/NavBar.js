@@ -8,6 +8,11 @@ import nav1 from '../assets/img/nav1.png';
 import nav2 from '../assets/img/nav2.png';
 import nav3 from '../assets/img/nav3.png';
 
+import { HashLink} from 'react-router-hash-link';
+import {
+  BrowserRouter as Router
+} from "react-router-dom";
+
 
 export const NavBar = () => {
 
@@ -32,12 +37,13 @@ export const NavBar = () => {
     setActiveLink(value);
   }
     return (
+    <Router>
         <Navbar expand="lg" className={scrolled ? "scrolled": ""}>
         <Container>
           <Navbar.Brand href="#home">
               <img src={logo} alt="Logo"/>
           </Navbar.Brand>
-
+          
           <Navbar.Toggle aria-controls="basic-navbar-nav"> 
               <span className="nav-toggle-icon"></span>
           </Navbar.Toggle>
@@ -55,11 +61,16 @@ export const NavBar = () => {
                   <a href="#"><img src={nav2} alt=""/></a>
                   <a href="#"><img src={nav3} alt=""/></a> 
               </div>
-              <button className=""onClick={() => console.log('connect')}><span>Let's Connect</span></button>
+              <HashLink to='#'>
+              <button className="vvd"><span>Let's Connect</span></button>
 
+
+              </HashLink>
+              
             </span>
           </Navbar.Collapse>
         </Container>
       </Navbar>
+    </Router>
    ) 
 }   
