@@ -1,10 +1,7 @@
 import React from 'react';
 import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-
- 
 import 'animate.css';
-
 import TrackVisibility from 'react-on-screen';
 import contactImg from '../assets/img/logo.svg';
 import emailjs from "emailjs-com";
@@ -26,7 +23,7 @@ export const Contact = () => {
     }
 
   return (
-    <section className="contact" id="connect">
+    <section className="contact" id="contact">
       <Container className="new-email-bx">
         <Row className="align-items-center">
           <Col size={12} md={6}>

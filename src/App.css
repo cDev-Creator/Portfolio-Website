@@ -1,3 +1,42 @@
+/************ Default ************/
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -177,46 +216,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	border-color: transparent;
 }
 
-/************ Default ************/
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 /************ Banner ************/
 .banner {
   height: calc( 100vh - 50px );
@@ -302,7 +301,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 20px;
   text-align: center;
   padding: 70px 50px;
-  margin-top: -60px;
+  margin-top: 50px;
   margin-bottom: 100px;
 }
 
@@ -357,6 +356,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin:100px;
 }
 
+
 button.projects-btn  {
   margin-left:0px !important;
   margin-top:15px;
@@ -368,7 +368,18 @@ button.projects-btn  {
   margin-left: 18px;
 	position: relative;
 	background-color: transparent;
-	transition: 0.3s ease-in-out;
+	transition: 0.5s ease-in-out;
+}
+
+button.projects-btn:hover {
+  color: black;
+  background-color: #fff;
+}
+button.projects-btn::before {
+  transition: 0.2s ease-in-out;
+}
+button.projects-btn :hover::before {
+  width: 100%;
 }
 
 .skill {
@@ -440,7 +451,7 @@ button.projects-btn  {
 .contact form button {
   font-weight: 700;
   color: #000;
-  border: 2px solid #fff;
+  border: 1px solid #fff;
   background-color: #fff;
   padding: 14px 48px;
   font-size: 18px;

@@ -8,6 +8,8 @@ import nav1 from '../assets/img/nav1.png';
 import nav2 from '../assets/img/nav2.png';
 import nav3 from '../assets/img/nav3.png';
 
+
+
 import { HashLink} from 'react-router-hash-link';
 import {
   BrowserRouter as Router
@@ -52,8 +54,9 @@ export const NavBar = () => {
             <Nav className="me-auto">
 
               <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => updateActiveLink('home')}>Home</Nav.Link>
-              <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => updateActiveLink('skills')}>Skills</Nav.Link>
+              <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => updateActiveLink('skills')}>About</Nav.Link>
               <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'}onClick={() => updateActiveLink('projects')} >Projects</Nav.Link>
+              <Nav.Link href="#contact" className={activeLink === 'contact' ? 'active navbar-link' : 'navbar-link'}onClick={() => updateActiveLink('contact')} >Contact</Nav.Link>
             </Nav>
             <span className="navbar-text">
               <div className="social-icons">
@@ -61,10 +64,8 @@ export const NavBar = () => {
                   <a href="#"><img src={nav2} alt=""/></a>
                   <a href="#"><img src={nav3} alt=""/></a> 
               </div>
-              <HashLink to='#'>
+              <HashLink to='#contact'>
               <button className="vvd"><span>Let's Connect</span></button>
-
-
               </HashLink>
               
             </span>

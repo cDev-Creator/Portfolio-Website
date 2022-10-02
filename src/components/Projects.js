@@ -28,8 +28,8 @@ export const Projects = () =>{
       };
   
     return(
+    <section className="projects" id="projects">
         <Container>
-        <section className='projects'>
       
              <Row className='align-items-center project-card'>
                 <h1 className='projects-title'>My Projects</h1>
@@ -78,10 +78,7 @@ export const Projects = () =>{
                         </Carousel>
                     </div>
                 </div>
-    
-   
-    </section>
-    </Container>
-        
+            </Container>
+        </section>   
     )
 }

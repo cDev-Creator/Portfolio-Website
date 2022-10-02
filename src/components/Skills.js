@@ -1,68 +1,82 @@
 import React from 'react';
 import {Container, Col} from 'react-bootstrap';
-
-
+import 'animate.css';
+import TrackVisibility from 'react-on-screen';
 
 export const Skills = () =>{
     return(
-        <Container>
-        <div className="skill-bx">
+    <section className="skills" id="skills">
+        <Container className="skill-bx">
         <h2>Technologies I work with</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
-        <div className="skills">
-        <Col>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
 
-        <div className="skill-item">
-            <li>JavaScript</li>
-        </div>
-        <div className="skill-item">
-              
-            <li>HTML</li>
-        </div>
-        <div className="skill-item">
-              
-            <li>CSS</li>
-        </div>
-        <div className="skill-item">
-            <li>React.js</li>
-        </div>
-        </Col>
-        <Col>
-        <div className="skill-item">
-            <li>PHP</li>
-        </div>
-        <div className="skill-item">
-              
-            <li>MySQL</li>
-        </div>
-        <div className="skill-item">
-              
-            <li>C#</li>
-        </div>
-        <div className="skill-item">
-            <li>Npm</li>
-        </div>
-        </Col>
-        <Col>
-        <div className="skill-item">
-            <li>Linux</li>
-        </div>
-        <div className="skill-item">
-              
-            <li>Git</li>
-        </div>
-        <div className="skill-item">
-             
-            <li>GitHub</li>
-        </div>
+        <TrackVisibility>
+            {({isVisible}) => 
+            
+                <div className={ isVisible ? "animate__animated animate__fadeIn" : ""}> 
+                      
+                <div className="skills">
+                <Col>
+                <div className="skill-item">
+                    <li>JavaScript</li>
+                </div>
+                <div className="skill-item">
+                    
+                    <li>HTML</li>
+                </div>
+                <div className="skill-item">
+                    
+                    <li>CSS</li>
+                </div>
+                <div className="skill-item">
+                    <li>React.js</li>
+                </div>
+                </Col>
+                <Col>
+                <div className="skill-item">
+                    <li>PHP</li>
+                </div>
+                <div className="skill-item">
+                    
+                    <li>MySQL</li>
+                </div>
+                <div className="skill-item">
+                    
+                    <li>C#</li>
+                </div>
+                <div className="skill-item">
+                    <li>Npm</li>
+                </div>
+                </Col>
+                <Col>
+                <div className="skill-item">
+                    <li>Linux</li>
+                </div>
+                <div className="skill-item">
+                    
+                    <li>Git</li>
+                </div>
+                <div className="skill-item">
+                    
+                    <li>GitHub</li>
+                </div>
 
-        <div className="skill-item">
-            <li>Unity</li>
-        </div>
-        </Col>
-        </div>
+                <div className="skill-item">
+                    <li>Unity</li>
+                </div>
+                </Col>
 
-    </div>
+                </div>
+                </div>}
+            </TrackVisibility>
+           
+       
+            
+
+
+              
     </Container>
+    </section>
+
     )
 }
