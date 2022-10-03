@@ -34,7 +34,7 @@ export const Contact = () => {
             </TrackVisibility>
           </Col>
           <Col size={12} md={6}>
-          <h2>Get In Touch</h2>
+          <h2>──── Get In Touch ────</h2>
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn animate__slow" : ""}>

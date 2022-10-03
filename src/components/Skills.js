@@ -7,8 +7,9 @@ export const Skills = () =>{
     return(
     <section className="skills" id="skills">
         <Container className="skill-bx">
-        <h2>Technologies I work with</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
+        <h2>──── Technologies I work with ────</h2>
+        <p>Throughout my programming journey I have added a variety of languages and technologies to my repertoire. <br></br>But I am very comfortable with learning and working with whatever language proves to be the  best tool for the job.<br></br> 
+        I love working through complex problems and coming up with responsive and creative solutions! </p>
 
         <TrackVisibility>
             {({isVisible}) => 

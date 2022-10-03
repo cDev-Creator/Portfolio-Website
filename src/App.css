@@ -228,7 +228,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-repeat: no-repeat;
   text-align: left;
 }
-.banner .tagline {
+/* .banner .tagline {
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
@@ -237,7 +237,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 20px;
   margin-bottom: 16px;
   display: inline-block;
-}
+} */
 .banner h1 {
   font-size: 65px;
   font-weight: 700;
@@ -295,6 +295,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     }
 }
 
+.my-name{
+  color:rgba(125, 117, 166, 0.875);
+}
+
 .contact-link{
   text-decoration: none;
 }
@@ -310,10 +314,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .skills {
+  padding-top:100px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;  
-  
 }
 .skill-item li {
   list-style-type: none;
@@ -332,10 +336,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ About ************/
 
+.about {
+  padding-top:100px;
+
+}
 .about-title, .about-info {
   text-align: left;
 }
 
+.dec-line {
+  color:rgba(125, 117, 166, 0.875);
+}
 .mypicture {
   border-radius: 20%;
   position: relative;
@@ -350,7 +361,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .projects-title {
-  margin-bottom: 70px;
+  margin-bottom: 45px;
 }
 
 .project-card {
@@ -390,6 +401,23 @@ button.projects-btn :hover::before {
 .skill {
   padding: 0 0 50px 0;
   position: relative;
+}
+.hcs-text, .guessit-text {
+  margin-top:100px;
+}
+
+
+#guessit-list{
+  display: none;
+  list-style:none;
+  padding-left:0;
+}
+#guessit-list li {
+  list-style-type: none;
+}
+#guessit-list li p::before { 
+  content: " ⊳";
+  
 }
 .minor-project-bx {
   margin-top: 100px;

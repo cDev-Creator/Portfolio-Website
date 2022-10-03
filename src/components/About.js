@@ -1,20 +1,20 @@
 import React from 'react';
-import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import mypicture from '../assets/img/nat.png';
-import project2 from '../assets/img/logo.svg';
-
-
 
 export const About = () =>{
 
     return (
+        <section className='about' id='about'>
         <Container>
-        <section className='about'>
-        <h1 className='about-title'>About Me</h1>
+       
+        <h1 className='about-title'>About Me <span className='dec-line'> ────</span></h1><br></br>
              <Row>
                 
                 <Col className='about-info text-start' xs={12} md={6} xl={5}>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p>I’m a college student looking to grow my software and web development knowledge. I study at Sullivan University and my major is cybersecurity. My programming journey kickstarted when I took an intro to programming class my first semester of college.<br></br> <br></br>
+                        The technologies I have been working with most recently are React.js/Npm and C#. I have been working on various exercises to hone my React.js/Npm skills. My largest project using them so far is the portfolio website you are viewing! In the past, I used C# in the context of game development. Two of my main creations were a path finding maze game and a rocket simulator which traversed though a variety of obstacles. But my largest project was a first-person shooter in a complex cyberpunk environment filled with dangerous AIs. I have also taken two C# driven programming classes over the course of my college education. Currently, I am enrolled in one called Visual Programming which has a focus on building applications that use Graphical User Interfaces in C#. <br></br> <br></br> 
+                        Besides coding, I enjoy hosting game nights for my friends, playing the guitar / piano, horseback riding and just getting out in nature!</p>
                        
                     </Col>
                     <Col xs={12} md={6} xl={7} >
@@ -24,8 +24,9 @@ export const About = () =>{
                 </Row>
 
 
-            </section>
+         
         </Container>
+        </section>
 
     )
 }

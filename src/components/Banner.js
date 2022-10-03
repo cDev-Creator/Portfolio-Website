@@ -19,9 +19,9 @@ export const Banner = () => {
                         <TrackVisibility>
                         {({isVisible}) => 
                         <div className={isVisible ? "animate__animated animate__fadeInLeft animate__slow" : ""}> 
-                            <span className='tagline'>Welcome to my Portfolio</span>
-                            <h1>{"Hi! I'm Natalie McCoy"}<span className='wrap'>, Developer</span></h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            {/* {<span className='tagline'>Welcome to my Portfolio</span>} */}
+                            <h1>Hello there!<br></br><br></br>I'm<span className='my-name'> Natalie McCoy</span><span className='wrap'>, Developer</span></h1>
+                            <p>I am an aspiring full-stack developer from Kentucky. I enjoy creating beautiful, engaging, and accessible user experiences!</p>
                         </div>}
                         </TrackVisibility>
                     <Router>
