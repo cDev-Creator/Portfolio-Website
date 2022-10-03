@@ -34,10 +34,11 @@ export const Contact = () => {
             </TrackVisibility>
           </Col>
           <Col size={12} md={6}>
+          <h2>Get In Touch</h2>
             <TrackVisibility>
               {({ isVisible }) =>
-                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <h2>Get In Touch</h2>
+                <div className={isVisible ? "animate__animated animate__fadeIn animate__slow" : ""}>
+                
                 <form onSubmit={sendEmail}>
                   <Row>
                     <Col size={12} sm={6} className="px-1">
