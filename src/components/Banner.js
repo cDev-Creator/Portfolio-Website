@@ -1,7 +1,7 @@
 import React from 'react';
 import {Container, Row, Col} from "react-bootstrap";
 import {ArrowRightCircle} from "react-bootstrap-icons";
-import header from "../assets/img/logo.svg";
+import moth from '../assets/img/mothclear.png';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import { HashLink} from 'react-router-hash-link';
@@ -26,14 +26,13 @@ export const Banner = () => {
                         </TrackVisibility>
                     <Router>
                         <HashLink className="contact-link" to='#contact'>
-                            <button className="vvd ">Let's Connect<ArrowRightCircle size={25}/></button>
+                            <button className="vvd ">Message Me<ArrowRightCircle size={25}/></button>
                         </HashLink>
                     </Router>
                         
                     </Col>
                     <Col xs={12} md={6} xl={5}>
-                        <img src={header} alt='Header' width='250'></img>
-
+                        <img src={moth} alt='Header' width='550'></img>
                     </Col>
                 </Row>
 

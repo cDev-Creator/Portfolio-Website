@@ -2,7 +2,7 @@ import React from 'react'
 import {Navbar, Nav, Container} from 'react-bootstrap';
 import {useState, useEffect} from "react";
 
-import logo from '../assets/img/logo.svg';
+import logo from '../assets/img/mothclear.png';
 
 import nav1 from '../assets/img/nav1.png';
 import nav2 from '../assets/img/nav2.png';
@@ -43,7 +43,7 @@ export const NavBar = () => {
         <Navbar expand="lg" className={scrolled ? "scrolled": ""}>
         <Container>
           <Navbar.Brand href="#home">
-              <img src={logo} alt="Logo"/>
+              <img src={logo} alt="Logo" width="80"/>
           </Navbar.Brand>
           
           <Navbar.Toggle aria-controls="basic-navbar-nav"> 
@@ -66,7 +66,7 @@ export const NavBar = () => {
                   <a href="#"><img src={nav3} alt=""/></a> 
               </div>
               <HashLink to='#contact'>
-              <button className="vvd"><span>Let's Connect</span></button>
+              <button className="vvd"><span>Message Me!</span></button>
               </HashLink>
               
             </span>

@@ -285,13 +285,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 @keyframes updown {
     0% {
-        transform: translateY(-20px);
+        transform: translateY(10px);
     }
     50% {
-        transform: translateY(20px);
+        transform: translateY(15px);
     }
     100% {
-        transform: translateY(-20px);
+        transform: translateY(10px);
     }
 }
 
@@ -372,7 +372,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin:10px;
 }
 
-
 button.projects-btn  {
   margin-left:0px !important;
   margin-top:15px;
@@ -405,7 +404,6 @@ button.projects-btn :hover::before {
 .hcs-text, .guessit-text {
   margin-top:100px;
 }
-
 
 #guessit-list{
   display: none;
@@ -450,34 +448,25 @@ image.project-item {
   backface-visibility: hidden;
 }
 
-.text-overlay {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-div.project-item:hover {
-  opacity: 0.8;
-}
-
-.project-item:hover .text-overlay{
-  opacity: 1;
-}
-
 .project-description {
   text-align: left;
   background-color: rgba(0, 0, 0, 0.803);
   color: white;
   font-size: 16px;
-  padding: 16px 32px;
+  padding: 50px 50px;
+  margin-bottom:30px;
+  border-radius: 30px;
 }
 
+a.project-item { 
+  color: inherit !important;
+  text-decoration: none !important;
+} 
 
+a:hover {
+  transition:  0.3s ease-in-out;
+  color: var(--secondary-accent)!important;
+}
 
 /************ Contact ************/
 .contact {
@@ -553,6 +542,10 @@ div.project-item:hover {
   width: 100%;
 }
 
+.contact img {
+  animation: updown 3s linear infinite;
+}
+
 #message {
   margin: 30px;
   color: rgb(222, 222, 222);
@@ -565,20 +558,14 @@ div.project-item:hover {
   display:none;
 }
 
-
 /************ Footer ************/
 
 .footer {
-  padding: 0 0 10px 0;
-
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.footer .social-icon img {
-  width: 30px;
-}
 .footer p {
   font-weight: 400;
   font-size: 11px;
@@ -587,11 +574,7 @@ div.project-item:hover {
   margin-top: 20px;
 }
 
-.social-icon {
-  margin-top:30px;
-}
 .copyright p {
   margin-top: 0px;
   margin-bottom: 0px;
-
 }

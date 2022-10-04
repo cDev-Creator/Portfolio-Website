@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
-import contactImg from '../assets/img/logo.svg';
+import contactImg from '../assets/img/mothclear.png';
 import emailjs from "emailjs-com";
 
 export const Contact = () => {
