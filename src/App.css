@@ -53,6 +53,24 @@ html {
   scroll-padding-top: 75px;
 }
 
+
+
+/* @keyframes color {
+  0%   { background: #131313; }
+  20%  { background: #131313; }
+  40%  { background: #151516; }
+  60%  { background: #131313; }
+  80%  { background: #131313; }
+  100% { background: #131313; }
+}
+
+body {
+  animation: color 4s infinite linear;
+  text-align: center;
+  padding: 2em;
+} */
+
+
 body {
   font-weight: 400;
   overflow-x: hidden;
@@ -69,6 +87,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /************ Navbar ************/
+.logo {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
 nav.navbar {
   padding: 18px 0;
   position: fixed;
@@ -217,27 +240,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /************ Banner ************/
+
 .banner {
   height: calc( 100vh - 50px );
   height: 100vh;
   margin-top: 0;
   padding:300px 0 100px 0;
-  background-image: url('./assets/img/banner-bg.jpg');
-  background-position: top center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  text-align: left;
+/*   background-image: url('./assets/img/banner-bg.jpg'); */
 }
-/* .banner .tagline {
-  font-weight: 700;
-  letter-spacing: 0.8px;
-  padding: 8px 10px;
-  background: linear-gradient(90.21deg, rgba(130, 130, 130, 0.663) -5.91%, rgba(78, 71, 112, 0.703) 111.58%);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  font-size: 20px;
-  margin-bottom: 16px;
-  display: inline-block;
-} */
+
 .banner h1 {
   font-size: 65px;
   font-weight: 700;
@@ -305,12 +316,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Skills ************/
 .skill-bx {
-  background: linear-gradient(90.21deg, rgba(130, 130, 130, 0.872) -5.91%, rgba(78, 71, 112, 0.889) 111.58%);
+  /* background: linear-gradient(90.21deg, rgba(130, 130, 130, 0.872) -5.91%, rgba(78, 71, 112, 0.889) 111.58%); */
+  background: linear-gradient(90.21deg, rgba(78, 78, 78, 0.165) -5.91%, rgba(96, 87, 136, 0.889) 111.58%);
   border-radius: 20px;
   text-align: center;
   padding: 70px 50px;
   margin-top: 50px;
   margin-bottom: 50px;
+
 }
 
 .skills {
@@ -470,7 +483,8 @@ a:hover {
 
 /************ Contact ************/
 .contact {
-  background: linear-gradient(90.21deg, var(--main-accent) -5.91%, var(--secondary-accent) 111.58%);
+  /* background: linear-gradient(90.21deg, var(--main-accent) -5.91%, var(--secondary-accent) 111.58%); */
+  background: linear-gradient(90.21deg, rgba(95, 87, 137, 0.889) -5.91%, rgba(53, 53, 53, 0.165)111.58%  );
   padding: 50px 0 100px 0;
 }
 .contact img {
