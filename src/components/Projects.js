@@ -46,7 +46,9 @@ export const Projects = () =>{
                         <p className='hcs-text'>Over this past summer, I was contacted by a private school which starts at pre-k and goes through 8th grade. The job was to program a lunchroom system entirely from scratch which would replace their dated system. As I began researching into the sort of technologies this would require, I quickly learned I would have to teach myself many new things. The main learning hurdle was a programming language I had never used before, that would go on to comprise most of the program, PHP. <br></br> <br></br> 
                         I completed the 1.0 version of this site in August before school was in session. My program is currently being used every day by their teachers to log and relay all information relating to lunch orders. But there are still many additional features I plan on adding in the coming months!
                         </p>
-                        <button className="projects-btn"onClick={() => console.log('learn more')}><span>Learn More!</span></button>
+                    {/*     <button className="projects-btn"onClick={() => location.href = `https://www.flaticon.com`}><span>Learn More!</span></button> */}
+
+                        <div className="hcs-link"><a href="https://github.com/cDev-Creator/HCS-Lunch" target="_blank" rel="noreferrer noopener" className="projects-btn">Source Code </a> </div>
                     </Col>
                 </Row>
 
@@ -84,27 +86,27 @@ export const Projects = () =>{
                             <div className="project-item">
                                 <img src={project4} alt="Image" height='210' />
                                 <h4 >Etch-A-Sketch</h4>
-                                <div><a href="https://cdev-creator.github.io/Sketch-Pad/" target="_blank" rel="noreferrer noopener">Live </a> |  
-                                <a href="https://github.com/cDev-Creator/Sketch-Pad" target="_blank" rel="noreferrer noopener"> Source Code</a></div>
+                                <div><a href="https://cdev-creator.github.io/Sketch-Pad/" target="_blank" rel="noreferrer noopener"><font color="#ffffff">Live</font> </a> |  
+                                <a href="https://github.com/cDev-Creator/Sketch-Pad" target="_blank" rel="noreferrer noopener"><font color="#ffffff"> Source Code</font></a></div>
         
                             </div>
                             <div className="project-item">
                                 <img src={project5} alt="Image" height='210' />
                                 <h4>Bookly</h4>
-                                <div><a href="https://cdev-creator.github.io/Library/" target="_blank" rel="noreferrer noopener">Live </a> |  
-                                <a href="https://github.com/cDev-Creator/Library" target="_blank" rel="noreferrer noopener"> Source Code</a></div>
+                                <div><a href="https://cdev-creator.github.io/Library/" target="_blank" rel="noreferrer noopener"><font color="#ffffff">Live </font></a> |  
+                                <a href="https://github.com/cDev-Creator/Library" target="_blank" rel="noreferrer noopener"><font color="#ffffff"> Source Code</font></a></div>
                             </div>
                             <div className="project-item">
                                 <img src={project6} alt="Image" height='210' />
                                 <h4>Mushrooms 'N Moons</h4>
-                                <div><a href="https://cdev-creator.github.io/Tic-Tac-Toe/" target="_blank" rel="noreferrer noopener">Live </a> |  
-                                <a href="https://github.com/cDev-Creator/Tic-Tac-Toe" target="_blank" rel="noreferrer noopener"> Source Code</a></div>
+                                <div><a href="https://cdev-creator.github.io/Tic-Tac-Toe/" target="_blank" rel="noreferrer noopener"><font color="#ffffff">Live </font></a> |  
+                                <a href="https://github.com/cDev-Creator/Tic-Tac-Toe" target="_blank" rel="noreferrer noopener"><font color="#ffffff"> Source Code</font></a></div>
                             </div>
                             <div className="project-item">
                                 <img src={project7} alt="Image" height='210' />
                                 <h4>Wiki Search API</h4>
-                                <div><a href="https://cdev-creator.github.io/Wiki-Search-API/" target="_blank" rel="noreferrer noopener">Live </a> |  
-                                <a href="https://github.com/cDev-Creator/Wiki-Search-API" target="_blank" rel="noreferrer noopener"> Source Code</a></div>
+                                <div><a href="https://cdev-creator.github.io/Wiki-Search-API/" target="_blank" rel="noreferrer noopener"><font color="#ffffff">Live </font></a> |  
+                                <a href="https://github.com/cDev-Creator/Wiki-Search-API" target="_blank" rel="noreferrer noopener"><font color="#ffffff"> Source Code </font></a></div>
                             </div>
                         </Carousel>
                     </div>

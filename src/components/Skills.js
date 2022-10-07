@@ -66,18 +66,10 @@ export const Skills = () =>{
                     <li>Unity</li>
                 </div>
                 </Col>
-
                 </div>
                 </div>}
-            </TrackVisibility>
-           
-       
-            
-
-
-              
+            </TrackVisibility>      
     </Container>
     </section>
-
     )
 }

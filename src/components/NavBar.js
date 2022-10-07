@@ -3,21 +3,16 @@ import {Navbar, Nav, Container} from 'react-bootstrap';
 import {useState, useEffect} from "react";
 
 import logo from '../assets/img/mothclear.png';
-
 import nav1 from '../assets/img/nav1.png';
 import nav2 from '../assets/img/nav2.png';
 import nav3 from '../assets/img/nav3.png';
-
-
 
 import { HashLink} from 'react-router-hash-link';
 import {
   BrowserRouter as Router
 } from "react-router-dom";
 
-
 export const NavBar = () => {
-
   const [activeLink, setActiveLink] = useState('home');
   const [scrolled, setScrolled] = useState(false);
 
@@ -61,9 +56,9 @@ export const NavBar = () => {
             </Nav>
             <span className="navbar-text">
               <div className="social-icons">
-                  <a href="#"><img src={nav1} alt=""/></a>
-                  <a href="#"><img src={nav2} alt=""/></a>
-                  <a href="#"><img src={nav3} alt=""/></a> 
+                {/*   <a href="#"><img src={nav1} alt=""/></a>
+                  <a href="#"><img src={nav2} alt=""/></a> */}
+                  <a href="https://github.com/cDev-Creator"><img src={nav3} alt=""/></a> 
               </div>
               <HashLink to='#contact'>
               <button className="vvd"><span>Message Me!</span></button>

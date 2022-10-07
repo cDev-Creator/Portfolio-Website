@@ -53,8 +53,6 @@ html {
   scroll-padding-top: 75px;
 }
 
-
-
 /* @keyframes color {
   0%   { background: #131313; }
   20%  { background: #131313; }
@@ -385,7 +383,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin:10px;
 }
 
-button.projects-btn  {
+.projects-btn  {
   margin-left:0px !important;
   margin-top:15px;
   font-weight: 700;
@@ -399,14 +397,14 @@ button.projects-btn  {
 	transition: 0.5s ease-in-out;
 }
 
-button.projects-btn:hover {
+.projects-btn:hover {
   color: black;
   background-color: #fff;
 }
-button.projects-btn::before {
+.projects-btn::before {
   transition: 0.2s ease-in-out;
 }
-button.projects-btn :hover::before {
+.projects-btn :hover::before {
   width: 100%;
 }
 
@@ -427,18 +425,19 @@ button.projects-btn :hover::before {
   list-style-type: none;
 }
 #guessit-list li p::before { 
-  content: " ⊳";
+  content: "⊳";
   
 }
 .minor-project-bx {
   margin-top: 100px;
   margin-bottom: 100px;
-  background: #beb9c947;
+  background-color: #ffffff04;
+  box-shadow: rgba(234, 234, 234, 0.35) 0px 2px 8px 0px;
   border-radius: 64px;
   text-align: center;
   padding: 60px 50px;
-
 }
+
 .project-item {
   margin: 20px;
 }
@@ -471,14 +470,17 @@ image.project-item {
   border-radius: 30px;
 }
 
-a.project-item { 
-  color: inherit !important;
+a{ 
   text-decoration: none !important;
 } 
 
-a:hover {
+font:hover {
   transition:  0.3s ease-in-out;
-  color: var(--secondary-accent)!important;
+  color: rgb(165, 165, 165)!important;
+}
+
+.hcs-link {
+  margin-top:70px;
 }
 
 /************ Contact ************/
