@@ -30,41 +30,55 @@ export const Skills = () =>{
                     <li>CSS</li>
                 </div>
                 <div className="skill-item">
+                    <li>Sass</li>
+                </div>
+
+                <div className="skill-item">
                     <li>React.js</li>
                 </div>
                 </Col>
                 <Col>
                 <div className="skill-item">
+                    <li>MySQL</li>
+                </div>
+
+                <div className="skill-item">
                     <li>PHP</li>
                 </div>
                 <div className="skill-item">
-                    
-                    <li>MySQL</li>
-                </div>
-                <div className="skill-item">
-                    
                     <li>C#</li>
-                </div>
+                </div> 
+               
                 <div className="skill-item">
                     <li>Npm</li>
+                </div>
+
+                <div className="skill-item">
+                    <li>Webpack</li>
                 </div>
                 </Col>
                 <Col>
                 <div className="skill-item">
+                    <li>GitHub</li>
+                </div>
+
+                <div className="skill-item">
                     <li>Linux</li>
                 </div>
+
                 <div className="skill-item">
-                    
                     <li>Git</li>
-                </div>
-                <div className="skill-item">
-                    
-                    <li>GitHub</li>
                 </div>
 
                 <div className="skill-item">
                     <li>Unity</li>
                 </div>
+
+                <div className="skill-item">
+                    <li>VirtualBox</li>
+                </div>
+
+                
                 </Col>
                 </div>
                 </div>}
