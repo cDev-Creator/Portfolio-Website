@@ -68,7 +68,7 @@ export const Projects = () =>{
                             </ul> */}
                     {show && <p> ⊳ Add the categories you would like at the bottom of the home page (ex. cinema, travel, celebrities etc.) and  then add the words you would like to each category.<br></br><br></br>
                     ⊳ Divide your players into teams (red and blue.) <br></br><br></br>
-                    ⊳ After you have added a sufficient amount of content,pick a category and hit select. A 60 second countdown timer will then begin and you must try to describe the randomly generated word/phrase to your teammate without using any parts of the word or rhyming. Once they have guessed correctly, pass the phone to the next player.<br></br><br></br>
+                    ⊳ After you have added a sufficient amount of content, pick a category and hit select. A 60 second countdown timer will then begin and you must try to describe the randomly generated word/phrase to your teammate without using any parts of the word or rhyming. Once they have guessed correctly, pass the phone to the next player.<br></br><br></br>
                     ⊳ This continues until time runs out and the player who is holding the device when time runs out must allocate a point to the opposing team using the red and blue buttons that will appear.<br></br><br></br>
                     ⊳ This cycle continues until a team gets 7 points when a victory page is displayed and a winner is determined!<br></br><br></br></p> }   
                     <button type="button" className="projects-btn" onClick={() => setShow(!show)}>
