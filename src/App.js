@@ -12,7 +12,7 @@ import { Footer } from "./components/Footer";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App font-link">
       <NavBar />
       <Banner />
       <Skills />
@@ -20,6 +20,7 @@ function App() {
       <Projects />
       <Contact />
       <Footer />
+    
     </div>
   );
 }

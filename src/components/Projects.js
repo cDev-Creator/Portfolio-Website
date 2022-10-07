@@ -69,8 +69,8 @@ export const Projects = () =>{
                     {show && <p> ⊳ Add the categories you would like at the bottom of the home page (ex. cinema, travel, celebrities etc.) and  then add the words you would like to each category.<br></br><br></br>
                     ⊳ Divide your players into teams (red and blue.) <br></br><br></br>
                     ⊳ After you have added a sufficient amount of content, pick a category and hit select. A 60 second countdown timer will then begin and you must try to describe the randomly generated word/phrase to your teammate without using any parts of the word or rhyming. Once they have guessed correctly, pass the phone to the next player.<br></br><br></br>
-                    ⊳ This continues until time runs out and the player who is holding the device when time runs out must allocate a point to the opposing team using the red and blue buttons that will appear.<br></br><br></br>
-                    ⊳ This cycle continues until a team gets 7 points when a victory page is displayed and a winner is determined!<br></br><br></br></p> }   
+                    ⊳ This continues until time runs out and the player who is holding the device when the round ends must allocate a point to the opposing team using the red and blue buttons that will appear.<br></br><br></br>
+                    ⊳ This cycle continues until a team reaches 7 points when a victory page is displayed and a winner is determined!<br></br><br></br></p> }   
                     <button type="button" className="projects-btn" onClick={() => setShow(!show)}>
                     {show === true ? 'Show Less' : 'How to play?'}   
                     </button>  
@@ -80,7 +80,7 @@ export const Projects = () =>{
                 </Row>
                 <div className="col-12">
                     <div className="minor-project-bx wow zoomIn">
-                        <h2>──── Additional Projects ────</h2>
+                        <h1>⸻ Additional Projects ⸻</h1>
                         <p>Here are a few of the smaller scale projects I have worked on!<br></br> </p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme minor-project-slider">
                             <div className="project-item">

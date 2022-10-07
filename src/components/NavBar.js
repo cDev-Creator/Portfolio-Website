@@ -58,7 +58,7 @@ export const NavBar = () => {
               <div className="social-icons">
                 {/*   <a href="#"><img src={nav1} alt=""/></a>
                   <a href="#"><img src={nav2} alt=""/></a> */}
-                  <a href="https://github.com/cDev-Creator"><img src={nav3} alt=""/></a> 
+                  <a href="https://github.com/cDev-Creator" target="_blank" rel="noreferrer noopener" ><img src={nav3} alt=""/></a> 
               </div>
               <HashLink to='#contact'>
               <button className="vvd"><span>Message Me!</span></button>
