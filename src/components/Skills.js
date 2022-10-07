@@ -7,7 +7,7 @@ export const Skills = () =>{
     return(
     <section className="skills" id="skills">
         <Container className="skill-bx">
-        <h1>⸻ Technologies I work with ⸻</h1>
+        <h1><span className="style-line">⸻ </span>Technologies I work with<span className="style-line"> ⸻</span></h1>
         <p>Throughout my programming journey I have added a variety of languages and technologies to my repertoire. <br></br>But I am very comfortable with learning and working with whatever language proves to be the  best tool for the job.<br></br> 
         I love working through complex problems and coming up with responsive and creative solutions! </p>
 

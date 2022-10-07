@@ -381,11 +381,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .project-card {
-  margin:100px;
+  margin-top:100px;
+  margin-bottom:100px;
+  margin-right: 100px
 }
 
-.project-card img {
-  margin:10px;
+img.projects {
+  margin-right:10px;
+}
+
+.project-row {
+  margin-bottom:50px;
 }
 
 .projects-btn  {
@@ -421,11 +427,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-top:100px;
 }
 
+.guessit-img {
+  margin-right: 30px;
+  margin-bottom: 15px;
+}
+
 #guessit-list{
   display: none;
   list-style:none;
   padding-left:0;
 }
+
 #guessit-list li {
   list-style-type: none;
 }
@@ -566,6 +578,26 @@ font:hover {
 .contact img {
   animation: updown 3s linear infinite;
 }
+
+@media (max-width: 1200px) {
+  .contact img {
+    display: none;
+  }
+  span.style-line-contact{
+    display: none;
+  }
+}
+
+@media (max-width: 780px) {
+  .contact img {
+    display: none;
+  }
+  span.style-line{
+    display: none;
+  }
+}
+
+
 
 #message {
   margin: 30px;

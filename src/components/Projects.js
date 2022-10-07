@@ -37,12 +37,12 @@ export const Projects = () =>{
     <section className="projects" id="projects">
         <Container>
       
-             <Row className='align-items-center project-card'>
-                    <Col xs={12} md={6} xl={7}>
+             <Row className='align-items-center project-row'>
+                    <Col xs={12} md={10} xl={7}>
                     <h1 className='projects-title'>My Projects<span className='dec-line'> ────</span></h1>
                     <img src={project1} alt='Project Img' height='380' width='630'></img>
                     </Col>
-                    <Col xs={12} md={6} xl={5}>
+                    <Col xs={12} md={7} xl={5}>
                         <p className='hcs-text'>Over this past summer, I was contacted by a private school which starts at pre-k and goes through 8th grade. The job was to program a lunchroom system entirely from scratch which would replace their dated system. As I began researching into the sort of technologies this would require, I quickly learned I would have to teach myself many new things. The main learning hurdle was a programming language I had never used before, that would go on to comprise most of the program, PHP. <br></br> <br></br> 
                         I completed the 1.0 version of this site in August before school was in session. My program is currently being used every day by their teachers to log and relay all information relating to lunch orders. But there are still many additional features I plan on adding in the coming months!
                         </p>
@@ -52,9 +52,9 @@ export const Projects = () =>{
                     </Col>
                 </Row>
 
-                <Row className='align-items-center project-card'>
+                <Row className='align-items-center '>
                     <Col xs={12} md={6} xl={7}>
-                    <img src={project2} alt='Project Img' height='630' width='300'></img>
+                    <img src={project2} alt='Project Img' height='630' width='300' className='guessit-img'></img>
                     <img src={project3} alt='Project Img' height='630' width='300'></img>
                     </Col>
                     <Col xs={12} md={6} xl={5} className='guessit-text'>
@@ -80,7 +80,7 @@ export const Projects = () =>{
                 </Row>
                 <div className="col-12">
                     <div className="minor-project-bx wow zoomIn">
-                        <h1>⸻ Additional Projects ⸻</h1>
+                        <h1><span className="style-line">⸻ </span> Additional Projects <span className="style-line"> ⸻</span></h1>
                         <p>Here are a few of the smaller scale projects I have worked on!<br></br> </p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme minor-project-slider">
                             <div className="project-item">

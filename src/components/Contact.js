@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
-import contactImg from '../assets/img/logo.svg';
+import contactImg from '../assets/img/mothclear.png';
 import emailjs from "emailjs-com";
 
 export const Contact = () => {
@@ -38,7 +38,7 @@ export const Contact = () => {
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn animate__slow" : ""}>
-                <h2>──── Get in touch ────</h2>
+                <h2><span className="style-line-contact">──── </span> Get in touch <span className="style-line-contact"> ────</span></h2>
                 <form onSubmit={sendEmail}>
                   <Row>
                     <Col size={12} sm={6} className="px-1">
